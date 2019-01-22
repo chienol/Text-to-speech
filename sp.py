@@ -17,7 +17,7 @@ class MainWindow(QMainWindow):
         QMainWindow.__init__(self)
 
         self.setMinimumSize(QSize(500, 350))
-        self.setWindowTitle("phần mềm chuyển chữ sang giọng nói ")
+        self.setWindowTitle("text to speech")
 
         self.nameLabel = QLabel(self)
         self.nameLabel.setText('text')
@@ -27,7 +27,7 @@ class MainWindow(QMainWindow):
         self.line.resize(300, 100)
         self.nameLabel.move(20, 20)
 
-        pybutton = QPushButton('nói ', self)
+        pybutton = QPushButton('speak ', self)
         pybutton.clicked.connect(self.clickMethod)
         pybutton.resize(200,32)
         pybutton.move(100, 150)
